@@ -1,6 +1,6 @@
 version: '3.7'
 services:
-  services-1:
+  services-1: 
     container_name: soldiers-gen_services-1
     image: dpatel1998/services-1:latest
     build: ./services-1
