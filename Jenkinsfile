@@ -28,6 +28,7 @@ pipeline {
                 // create swarm infrastructure
                 // copy over docker-compose.yaml
                 // ssh: docker stack deploy --compose-file docker-compose.yaml army_soldier
+                sh 'echo deploy'
             }
         }
     }    
