@@ -31,5 +31,4 @@ pipeline {
                 sh 'echo deploy'
             }
         }
-    }    
-                
+    }                
