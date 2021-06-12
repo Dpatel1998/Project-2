@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+    stages {
+        stage('Test') {
+            steps {
+                // pytest
+                // run for each service
+                // produce cov reports 
+                sh 'bash jenkins/test.sh'
+            }
+        }
+        stage('Build') {
+            steps {
+                // install docker and docker compose 
+                // docker-compose push 
+            }
+        }
+        stage('Configuration Management (Ansible)') {
+            steps {
+                // install ansible on jenkins machine for the Jenkins user
+                // ansible-playbook -i inventory.yaml playbook.yaml
+            }
+        }
+        stage('Deploy') {
+            steps {
+                
