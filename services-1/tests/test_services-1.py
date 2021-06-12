@@ -1,7 +1,7 @@
-from unittest.mock import patch
 from flask import url_for
 from flask_testing import TestCase
-import requests_mock
+import requests_mock 
+import requests
 from application import app, db
 from application.models import Soldier
 
@@ -27,11 +27,11 @@ class TestGenerator(TestBase):
 class TestResponse(TestBase):
     def test_index(self):
         with requests_mock.mock() as g:
-            g.get("http://Soldier-gen_service2:5000/nationality", text = "Russian")
-            g.get("http://Soldier-gen_service3:5000/player_class", text = "Spy")
-            g.post("http://Soldier-gen_service4:5000/build", text = "A person employed by the army to secretly obtain information on an enemy.")
+            g.get("http://services-2:5000/nationality", text = "Russian")
+            g.get("http://services-3:5000/player_class", text = "Spy")
+            g.post("http://services-4:5000/build", text = "A person employed by the army to secretly obtain information on an enemy.")
             
             response = self.client.get(url_for('gen'))
-            self.assertNotIn(b"British", response.data)
-            self.assertIn(b"Spy", response.data)
-            self.assertIn(b"A person employed by the army to secretly obtain information on an enemy.", response.data)
+        self.assertNotIn("British", response.data.decode())
+        self.assertIn("Spy", response.data.decode())
+        self.assertIn("A person employed by the army to secretly obtain information on an enemy.", response.data.decode())

@@ -11,5 +11,5 @@ class TestResponse(TestBase):
     def test_player_class(self):
         with patch("random.choice") as r:
             r.return_value = "Medic"
-            response = self.client.get(url_for('player_class'))
+            response = self.client.get(url_for('nationality'))
             self.assertEqual(b'Medic', response.data)

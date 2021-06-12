@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, Response
 from application import app
 
-@app.route('/build', methods=['POST'])
+@app.route('/build', methods=['POST','GET'])
 def build():
     player_class = request.data.decode('utf-8')
 
