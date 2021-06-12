@@ -19,7 +19,7 @@
 <h2> Your new Soldier is: {{ nationality_response }} - {{ player_class_response }} </h2>
 
 <h2>Your last couple of results</h2>
-{% for result in view_Soldier %}
+{% for result in view_players %}
 Race chosen was: {{ result.nationality }} --- Soldier chosen was: {{ result.player_class }}<br>
 The description was {{ result.build }}<br><br>
 {% endfor %}
