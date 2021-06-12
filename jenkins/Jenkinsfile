@@ -1,17 +1,16 @@
 pipeline {
     agent any
-    enviroment{
+    enviroment {
         DOCKER_USERNAME = credentials('DOCKER_USERNAME')
         DOCKER_PASSWORD = credentials('DOCKER_PASSWORD')
     }
-stages {
+    stages {
         stage('Install Requirements') {
             steps {
-                
                 sh 'bash jenkins/install-requirements.sh'
             }
         }
-    stages {
+        stages {
         stage('Test') {
             steps {
                 // pytest
@@ -49,4 +48,4 @@ stages {
             }
         }
     } 
-               
+}      
