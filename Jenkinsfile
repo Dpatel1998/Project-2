@@ -1,5 +1,12 @@
 pipeline {
     agent any
+stages {
+        stage('Install Requirements') {
+            steps {
+                
+                sh 'bash jenkins/install-requirements.sh'
+            }
+        }
     stages {
         stage('Test') {
             steps {
