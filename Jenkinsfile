@@ -13,7 +13,13 @@ pipeline {
             steps {
                 // install docker and docker compose 
                 // docker-compose push
-                sh 'echo build' 
+                sh 'docker-compose build' 
+            }
+        stage('push') {
+            steps {
+                // install docker and docker compose 
+                // docker-compose push
+                sh 'docker-compose push' 
             }
         }
         stage('Configuration Management (Ansible)') {
