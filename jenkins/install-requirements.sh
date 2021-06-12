@@ -13,7 +13,7 @@ sudo curl -L "https://github.com/docker/compose/releases/download/${version}/doc
 sudo chmod +x /usr/local/bin/docker-compose
 
 # Docker Login 
-docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+sudo docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
 
 echo Username: $DOCKER_USERNAME
 echo Password: $DOCKER_PASSWORD
