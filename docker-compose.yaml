@@ -10,19 +10,27 @@ services:
       protocol: tcp
     environment:
       DATABASE_URI: ${DATABASE_URI}
+    deploy: 
+      replicas: 3
       
   services-2:
     container_name: soldiers-gen_services-2
     image: dpatel1998/services-2:latest
     build: ./services-2
+    deploy: 
+      replicas: 3
    
   services-3:
     container_name: soldiers-gen_services-3
     image: dpatel1998/services-3:latest
     build: ./services-3
+    deploy: 
+      replicas: 3
     
   services-4:
     container_name: soldiers-gen_services-4
     image: dpatel1998/services-4:latest
     build: ./services-4
+    deploy: 
+      replicas: 3
    
