@@ -10,8 +10,8 @@ services:
       protocol: tcp
     environment:
       DATABASE_URI: ${DATABASE_URI}
-      deploy: 
-        replicas: 3
+    deploy: 
+      replicas: 3
       
   services-2:
     container_name: soldiers-gen_services-2
