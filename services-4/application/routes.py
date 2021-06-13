@@ -18,7 +18,7 @@ def build():
     elif player_class == "Translator":
         build = 'The Translator is responsible for conducting interpretation and preparing translations between foreign languages.'
     elif player_class == "Tankman":
-        build = 'Specialist soldier trained to handel Tanks.'
+        build = 'Specialist soldier trained to handle Tanks.'
     elif player_class == "General":
         build = 'A general officer is an officer of high rank.'
     
