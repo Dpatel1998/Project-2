@@ -24,6 +24,7 @@ def build():
     elif player_class == "INFANTRY-SOLDIER":
         build = 'A infeantry soldier is on the front line on peace-keeping missions and some of the most active type of soldier.'
     
+    
     else:
         build = "Soldier not compatible"
 
