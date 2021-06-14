@@ -21,6 +21,8 @@ def build():
         build = 'Specialist soldier trained to handle Tanks.'
     elif player_class == "General":
         build = 'A general officer is an officer of high rank.'
+    elif player_class == "INFANTRY-SOLDIER":
+        build = 'A infeantry soldier is on the front line on peace-keeping missions and some of the most active type of soldier.'
     
     
     else:
