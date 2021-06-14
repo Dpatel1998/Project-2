@@ -56,9 +56,12 @@ The following screenshot shows the initial risk assesment done on the 07/06/2021
 
 ![risk](./screenshots/risk-assessment.PNG)
 
+# Application
+Below is a screenshot of the home screen of the application.
 
+![app](./screenshots/app.PNG)
 
-#### Unit Testing
+# Unit Testing
 Below are screenshots of the tests ran:
 
 ## Services 1 Test
