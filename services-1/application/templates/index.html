@@ -5,7 +5,7 @@
     <title>Army Soldier Generator</title>
     <style>
         body {
-          background-color: rgb(13, 88, 59);
+          background-color: rgb(101, 97, 160);
         }
     </style>
 </head>
@@ -14,13 +14,13 @@
     <h2>Refresh to generate a Soldier Build</h2>
     <h3>Nationality: {{ nationality_response }}</h3>
     <h3>Class: {{ player_class_response }}</h3>
-    <h3>Discription: {{ build_response }}</h3>
+    <h3>Description: {{ build_response }}</h3>
 <hr></hr>
 <h2> Your new Soldier is: {{ nationality_response }} - {{ player_class_response }} </h2>
 
 <h2>Your last couple of results</h2>
 {% for result in view_players %}
-Race chosen was: {{ result.nationality }} --- Soldier chosen was: {{ result.player_class }}<br>
+Nationality chosen was: {{ result.nationality }} --- Soldier chosen was: {{ result.player_class }}<br>
 The description was {{ result.build }}<br><br>
 {% endfor %}
 
